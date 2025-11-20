@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+
+/* header  */
+.logo-container {
+    text-align: center ;
+    background-color: #2C3534 ;
+    
+}
+.img-logo {
+    width: 300px;
+    height: 200px;
+}
+
+.menu {
+    background-color: #2C3534;
+}
+
+.lista-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Libre Baskerville" , Verdana, Tahoma, sans-serif ;
+}
+
+.link {
+    text-decoration: none;
+    color: #EA6C31;
+}
+
+/* Bienvenida*/
+.bienvenida {
+    background-color: #2C3534;
+    font-family: "Libre Baskerville";
+    font-size: clamp(20px, 8vw, 20px);
+    padding: 10%;
+}
+
+/* Productos */
+
+
+.tit-prod {
+    text-align: center;
+    color: #EA6C31;
+    background-color:#2C3534;
+}
+
+.prod-containers{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2C3534;
+}
+
+
+.imagen-card{
+    width: 280px;
+}
+
+.datos{
+    font-family: "Josefin Sans",Verdana, Tahoma, sans-serif;
+  
+}
+.item-tit{
+    color: #EA6C31;
+    font-size: 25px;
+}
+
+.descrip{
+    margin-bottom: 8px;
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: 800;
+    color: #EA6C31;
+    margin-bottom: 8px;
+}
+
+.botonera{
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+
+}
+
+.btn-agregar{
+    background-color:#AD475D;
+    color: #2C3534;
+    font-size: 20px;
+    padding:  8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-agregar:hover {
+    background-color: #EA6C31;
+    font-size: 23px;
+}
+
+/* Contacto */
+
+.contacto {
+    background-color: #2C3534;
+    color: #EA6C31;
+    background-image: url(../images/1679050936131_085632.jpg) ;
+    background-size: cover;
+    padding: 15px;
+}
+
+.tit-contacto {
+    font-size: clamp(32px, 8vw, 64px);
+    text-align: center;
+    font-family:"Josefin Sans",Verdana, Tahoma, sans-serif ;
+}
+
+.form-container {
+    display: flex;
+    text-align: center;
+    margin: 32px;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column;
+    background-color: #EA6C31 ;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: #EA6C31 0px 0px 50px;
+
+}
+
+input[type=text],[type=email],textarea {
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    font-size:16px ;
+    font-family: "Josefin Sans",Verdana, Tahoma, sans-serif;
+}
+
+input[type=text] {
+    margin-bottom: 32px;
+    border-bottom: 1px ;
+}
+
+input[type=email] {
+    margin-bottom: 32px;
+    border-bottom: 1px ;
+}
+
+.mensaje {
+    height: 100px;
+    margin-bottom: 32px;
+    padding: 2px;
+    font-family: "Josefin Sans",Verdana, Tahoma, sans-serif;
+}
+
+.btn-enviar {
+    border: none;
+    margin-bottom: 32px;
+    padding: 8px;
+    background-color: #AD475D;
+    color: #2C3534;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: "Josefin Sans",Verdana, Tahoma, sans-serif;
+    font-size: 20px
+    
+}
+
+.footer {
+    background-color: #EA6C31;
+    color: #2C3534;
+    text-align: center;
+}
+
+.footer-redes{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
