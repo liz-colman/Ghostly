@@ -2,5 +2,6 @@ Ghostly
 
 ### Descripcion:
 
-Este proyecto es una pagina web basica desarrollada como parte de un curso de Front-End. La pagina esta estructurada con HTML semantico y utiliza las etiquetas \<header>, \<main>, y \<footer> para organizar el contenidop. El objetivo es aprender a crear la estructura basica de una pagina web y prepararla para futuras mejoras con CSS y JavaScript.
+Ghostly es una pagina web desarrollada como proyecto de Front End js, centrada en una estetica isnpirada en halloween, la cultura popular spooky y la decoracion tematica.El objetivo del sitio es mostrar productos y contenido visual que celebra el espiritu de halloween todo el año.
+
 -----------------------|
