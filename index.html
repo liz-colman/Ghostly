@@ -6,9 +6,6 @@
     <title>Ghostly</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-      console.log
-    </script>
 </head>
 <body>
 
@@ -21,13 +18,22 @@
     <nav class="menu">
      <ul class="lista-links">
         <li>
-          <a class="link"  href="">Inicio</a>
+          <a class="link"  href="#inicio">Inicio</a>
         </li>
         <li>
-          <a class="link" href="">Productos</a>
+          <a class="link" href="#productos">Productos</a>
         </li>
         <li>
-          <a class="link" href="">Contacto</a>
+          <a class="link" href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a class="link" href="#contacto">Contactos</a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <i class="fa-solid fa-shopping-cart"></i>
+            <span id="contador-carrito">0</span>
+          </a>
         </li>
      </ul>
     </nav>
@@ -36,154 +42,156 @@
  </header>
 
  <main>
- <section class="footer">
+ 
+  <section class="hero-bienvenida" id="inicio">
+        
+        <p class="hero-subtitle">Halloween todo el año</p>
+        <button class="btn-coleccion">VER COLECCIÓN</button>
+    </section>
+
+    <section class="productos-destacados" id="productos">
+        <h2 class="section-title">NUESTRAS PIEZAS</h2>
+        
+        <div class="destacados-grid">
+            <div class="prod-destacado-item item-grande">
+                <img src="images/espejo.png" alt="Producto Destacado 1">
+            </div>
+
+            <div class="prod-destacado-item">
+                <img src="images/nachera.png" alt="Witch Hat">
+                <p class="item-name">Witch Hat</p>
+                <p class="item-price">$54.000</p>
+            </div>
+
+            <div class="prod-destacado-item">
+                <img src="images/stacked pumpking 1.png" alt="Stacked Pumpkins">
+                <p class="item-name">Stacked Pumpkins</p>
+                <p class="item-price">$77.000</p>
+            </div>
+
+            <div class="prod-destacado-item item-doble-pequeño">
+                <div class="prod-pequeño">
+                    <img src="images/Captura de pantalla 2025-11-10 223338.png" alt="Portavela Ghost">
+                    <p class="item-name">Portavela Ghost</p>
+                    <p class="item-price">$30.800</p>
+                </div>
+                <div class="prod-pequeño">
+                    <img src="images/plato fantasma.png" alt="Plato Ghost">
+                    <p class="item-name">Plato Ghost</p>
+                    <p class="item-price">$27.000</p>
+                </div>
+            </div>
+
+            <div class="prod-destacado-item item-triple-diseño">
+                <div class="prod-pequeño">
+                    <img src="imageS/pack ethernal.png" alt="Espejo Goth">
+                    <p class="item-name">Espejo Goth</p>
+                    <p class="item-price">$76.000</p>
+                </div>
+                </div>
+        </div>
+        </section>
+
+    <section class="faq-section" id="faq">
+        <h2 class="section-title">PREGUNTAS FRECUENTES </h2>
+        
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">¿Los productos son artesanales?</button>
+                <div class="faq-answer">
+                    <p>Sí, todas nuestras piezas son cuidadosamente elaboradas a mano, garantizando su unicidad y calidad.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Hacen envíos?</button>
+                <div class="faq-answer">
+                    <p>Realizamos envíos a todo el país. Los tiempos de entrega pueden variar según la ubicación. Consulta nuestra política de envíos para más detalles.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Las piezas son únicas o se repiten?</button>
+                <div class="faq-answer">
+                    <p>La mayoría de nuestras piezas son únicas debido a su naturaleza artesanal. Puede haber variaciones sutiles en color y forma, lo que las hace especiales.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo cuidar las piezas?</button>
+                <div class="faq-answer">
+                    <p>Recomendamos limpiar las piezas con un paño suave y seco. Evita el uso de productos químicos abrasivos para preservar su acabado y detalles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ </main>
+
+
+ 
+   <section class="contacto" id="contacto">
+    <div class="contacto-flex-container">
+      <div class="col-formulario">
+        <h2 class="tit-contacto">Contáctanos</h2>
+        <p class="subtitulo-contacto">
+          Por favor, siéntete libre de contactarnos y te responderemos tan pronto como podamos.
+        </p>
+        <form class="formulario">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre.">
+          <input type="text" name="email" id="email" placeholder="Email.">
+          <textarea class="mensaje" name="mensaje" id="mensaje" placeholder="Mensaje."></textarea>
+          <button class="btn-enviar" type="submit">Enviar</button>
+        </form>
+
+      </div>
+      <div class="col-detalles">
+        <div class="detalle-item">
+          <h3 class="detalle-titulo">Escribenos</h3>
+          <p class="detalle-texto">+54 9 11 33144888</p>
+          <p class="detalle-texto">ghostlystore@outlook.com</p>
+
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="footer-logo">
+      <img src="images/logo ghostly nuevo -02.png" alt="Logo Ghostky footer">
+
+    </div>
+
+     <nav class="footer-nav">
+      <ul class="lista-links-footer">
+        <li><a class="link-footer" href="">Inicio</a></li>
+        <li><a class="link-footer" href="">Productos</a></li>
+        <li><a class="link-footer" href="">Contactos</a></li>
+      </ul>
+
+     </nav>
+
     <div class="footer-redes"> 
       <a href="https://www.instagram.com/ghostlystore_/">
-        <i class="fa-brands fa-instagram fa-3x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
       </a>
       <a href="https://www.tiktok.com/@ghostly.store?_r=1&_t=ZM-91VzeIaIvwh">
-        <i class="fa-brands fa-tiktok fa-3x"></i>
+        <i class="fa-brands fa-tiktok fa-2x"></i>
       </a>
       <a href="#">
-        <i class="fa-brands fa-whatsapp fa-3x"></i>
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
       </a>
     </div>
-  </section>
-  
 
-  
-
-  <section class="contacto">
-    <h2 class="tit-contacto" id="contacto">Contactanos</h2>
-    <div class="form-container">
-      <form class="formulario">
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre.">
-        <input type="email" name="email" id="email" placeholder="Ingrese su email.">
-        <textarea class="mensaje" name="mensaje" id="mensaje" placeholder="Mensaje."></textarea>
-        <button class="btn-enviar">Enviar</button>
-      </form>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Ghostly. Todos los derechos reservados.</p>
     </div>
-  </section>
 
-  <section class="productos">
-    <h2 class="tit-prod">Productos</h2>
+  </footer>
 
-    <div class="prod-containers">
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/nachera.png" alt="nachera en forma de sombrero de bruja">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Witch Hat </span>
-          <div class="descrip">Nachera de ceramica</div>
-          <div class="precio">$54.000</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/stacked pumpking 1.png" alt="Portavela de calabazas">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Stacked Pumpkins </span>
-          <div class="descrip">Portavela de ceramica</div>
-          <div class="precio">$77.000</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/Captura de pantalla 2025-11-10 223338.png" alt="fantasmas de ceramica">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Portavela Ghost </span>
-          <div class="descrip">Portavela de ceramica</div>
-          <div class="precio">$30.800</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/pack ethernal.png" alt="tazas ceramicas">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Pack Eternal </span>
-          <div class="descrip">Tazas ceramicas</div>
-          <div class="precio">$38.720</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/plato fantasma.png" alt="plato en forma de fantasma">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Plato Ghost </span>
-          <div class="descrip">Plato de ceramica</div>
-          <div class="precio">$27.000</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="prod-item">
-        <div class="item-img">
-          <img class="imagen-card" src="images/espejo.png" alt="espejo">
-        </div>
-        <div class="datos">
-          <span class="item-tit"> Espejo Goth </span>
-          <div class="descrip">Espejo decorativo</div>
-          <div class="precio">$76.000</div>
-          <div class="botonera">
-            <button class="btn-agregar">Agregar al carrito</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-  </section>
-
-  <section class="bienvenida">
-    <p class="txt-bienvenida">
-      Ghostly: donde el encanto de halloween vive todo el año.
-      Ceramicas y objetos unicos que transforman tu hogar con un toque misterioso.
-    </p>
-
-  </section>
- </main>
+<script src="js/main.js"></script>
     
 
 </body>
